@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>my_project</name>
+  <version>0.0.0</version>
+  <description>Launch package bundling the sensor, processor, and command server nodes.</description>
+  <maintainer email="maintainer@example.com">Mehmet Akif Vardar</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <depend>launch</depend>
+  <depend>launch_ros</depend>
+
+  <exec_depend>sensor_publisher_pkg</exec_depend>
+  <exec_depend>data_processor_pkg</exec_depend>
+  <exec_depend>command_server_pkg</exec_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
