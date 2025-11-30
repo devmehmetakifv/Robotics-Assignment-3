@@ -27,3 +27,5 @@ RUN echo "source /opt/ros/humble/setup.bash" >> /root/.bashrc \\
     && echo "source /ws/install/setup.bash" >> /root/.bashrc
 
 ENTRYPOINT ["/entrypoint.sh"]
+
+
