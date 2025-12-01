@@ -23,8 +23,7 @@ RUN chmod +x /entrypoint.sh
 RUN source /opt/ros/humble/setup.bash && colcon build
 
 # Auto-source ROS and workspace setup for interactive shells
-RUN echo "source /opt/ros/humble/setup.bash" >> /root/.bashrc \\
-    && echo "source /ws/install/setup.bash" >> /root/.bashrc
+RUN echo "source /opt/ros/humble/setup.bash" >> /root/.bashrc && echo "source /ws/install/setup.bash" >> /root/.bashrc
 
 ENTRYPOINT ["/entrypoint.sh"]
 
